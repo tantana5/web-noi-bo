@@ -20,13 +20,10 @@ class CreateUsersTable extends Migration {
             $table->timestamp('birthday')->nullable();
             $table->string('avatar')->nullable();
             $table->string('address')->nullable();
-            $table->string('identity')->nullable();
             $table->string('phone')->nullable();
-            $table->integer('type')->default(0);
-            $table->integer('active')->default(0);
+            $table->integer('role')->default(0);
             $table->integer('gender')->default(0);
             $table->integer('last_login')->default(0);
-            $table->string('active_code', 20)->nullable();
             $table->integer('updated_by')->nullable();
             $table->integer('created_by')->nullable();
             $table->rememberToken();
